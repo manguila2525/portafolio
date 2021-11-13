@@ -1,0 +1,102 @@
+body{
+  background: rgb(41,32,82);
+background: linear-gradient(144deg, rgba(41,32,82,1) 30%, rgba(52,108,217,1) 100%);
+font-family: 'Cabin', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.bg-1{
+  background: #292052;
+  color: white;
+  /* box-shadow: 0px 0px 11px 0px; */
+}
+/* NAVBAR */
+.navbar{
+
+  display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  /* box-shadow: 0px 0px 11px 0px; */
+}
+.navbar__brand{
+  font-size: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  
+}
+.navbar__group{
+
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.nav-link{
+  color: white;
+}
+
+.btn{
+  padding: 1rem 0.7rem;
+    border-radius: 5%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary{
+  background: none;
+  color: #fff; 
+  border: solid 1px #346cd9; 
+}
+
+.btn-focus{
+  box-shadow: 0px 0px 10px 0px #346cd9;
+}
+
+/* HOME */
+.row__home{
+  height: 850px;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: rgb(219, 216, 216);
+}
+.title{
+  font-size: 3rem;
+}
+.title__focus{
+  color: #346cd9;
+  text-shadow: 0px 0px 20px;
+}
+.description{
+  text-align: justify;
+}
+.img__home{
+  width: 90%;
+ border: solid 1rem #346cd9;
+ box-shadow: 0px 0px 20px 0px #346cd9;
+}
+
+/* ABOUT  */
+.title__about{
+  border-left: solid  #346cd9 ;
+  border-left-width: 10px;
+  padding-left: 5px;
+
+}
+.about__img{
+  width: 80%;
+  height: auto;
+}
+.about__description{
+  font-size: 16px;
+}
+.img-group{
+  width: 50%;
+}
