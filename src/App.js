@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -18,7 +19,10 @@ const App = () => {
           <Home></Home>
         </div>
         <About></About>
-        <Contact></Contact>
+        <div className="container-fluid">
+          <Contact></Contact>
+        </div>
+        <Footer></Footer>
       </Router>
     </Fragment>
   );

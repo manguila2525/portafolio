@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import MaikolImg from '../assets/img/maikolSinFondo2.png';
-
+import pdf from '../assets/downloads/Maikol-SanchezCv.pdf';
 const Home = () => {
   return (
     <Fragment >
@@ -11,6 +11,10 @@ const Home = () => {
           <h2>Computer Engineering
             University Alejandro de Humboldt.
             Caracas, Venezuela.</h2>
+          <a href={pdf} download="MaikolSanchezCV">
+            <div className="nav-link "> <button className="btn btn-primary btn-focus">DOWNLOAD CV</button></div>
+          </a>
+
         </div>
         <div className="col-md-6 order-0 order-sm-1 d-flex justify-content-center">
 

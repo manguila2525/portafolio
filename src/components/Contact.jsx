@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import emailjs, { sendForm } from 'emailjs-com';
+import emailjs from 'emailjs-com';
+
 const Contact = () => {
 
   //  ENVIAR MENSAJE AL CORREO ELECTRONICO
@@ -15,19 +16,19 @@ const Contact = () => {
   }
   return (
     <Fragment>
-      <div id="contact" className="row justify-content-center">
-        <h1>Contact</h1>
-        <form className="form__about col-4" onSubmit={sendEmail}>
+      <div id="contact" className="row justify-content-center py-5">
+        <form className="form__about col-12 col-md-6 p-5" onSubmit={sendEmail}>
+          <h1 className="display-2 bold title__about my-2 text-white">Contact</h1>
           <div className="mb-3" >
-            <label htmlFor="name" className="form-label">Name:</label>
-            <input type="text" name="to_name" id="name" className="form-control" />
+            <label htmlFor="name" className="form-label text-muted">Name:</label>
+            <input type="text" name="to_name" id="name" className="form-control" placeholder="Your name" />
           </div>
           <div className="mb-3" >
-            <label htmlFor="from_name" className="form-label">Email:</label>
-            <input type="text" name="from_namee" id="from_name" className="form-control" />
+            <label htmlFor="from_name" className="form-label text-muted">Email:</label>
+            <input type="text" name="from_namee" id="from_name" placeholder="Your email" className="form-control" />
           </div>
-          <textarea name="message" cols="30" rows="10"></textarea>
-          <button className="btn btn-success form-control" type="submit">Send</button>
+          <textarea name="message" placeholder="Send your message" className="form-control mb-3" cols="49" rows="10"></textarea>
+          <button className="btn btn-primary btn-focus form-control" type="submit">Send</button>
         </form>
       </div>
     </Fragment>
